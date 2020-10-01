@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 <body>
+    <div class="container-fluid">
+        <header>
+            <h1 id="dash">Weather Dashboard</h1>
+        </header>
+        <main id="main" class="row">
+            <aside id="search" class="col-md-4">
+                <form>
+                    <label for="city-search">Search for a city:</label>
+                    <br>
+                    <input type="text">
+                    <input type="submit" value="search">
+                    <li>city</li>
+                </form>
+            </aside>
+            <article id="city" class="col-md-8">
+                <section id="city-info" class="row">
+                    <h3 id="city-name"></h3>
+                    <br>
+                    <h6 id="temp">Temp:</h6>
+                    <br>
+                    <h6 id="humid">Humidity:</h6>
+                    <br>
+                    <h6 id="wind">Wind Speed:</h6>
+                    <br>
+                    <h6 id="uv">UV Index:</h6>
+                    <br>
+                </section>
+                <section class="row">
+                    <h3>5-day forecast</h3>
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

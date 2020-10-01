@@ -1,0 +1,18 @@
+#dash{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#search{
+    background-color: lightslategray;
+}
+#main{
+    height: 500px;
+}
+#city{
+    background-color: lightsteelblue;
+}
+#city-info{
+    width: 500px;
+}
