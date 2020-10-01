@@ -6,12 +6,15 @@ $.ajax({
     method: "GET"
   }).then(function(response) {
     console.log(response);
-    $("#city-name").append(response.city.name);
+    $("#city-name").append(response.city.name + " " + response.list[0].dt_txt);
     $("#temp").append(response.list[0].main.feels_like + " °F");
     $("#humid").append(response.list[0].main.humidity);
     $("#wind").append(response.list[0].wind.speed);
-    var lat = response.city.coord.lat;
-    var lon = response.city.coord.lon;
+    $("#dayOne").text(response.list[5].dt_txt);
+    $("#dayTwo").text(response.list[13].dt_txt);
+    $("#dayThree").text(response.list[21].dt_txt);
+    $("#dayFour").text(response.list[29].dt_txt);
+    $("#dayFive").text(response.list[37].dt_txt);
 });
 
 
